@@ -1,0 +1,1026 @@
+body {
+padding-top:55px;
+font-family:sofia-pro,"Sofia Pro",sans-serif;
+color:#4e4e4e;
+background-color:#1d1919;
+background:url(../img/panorama.jpg);
+background-size:cover;
+}
+
+a:hover {
+color:#f49500;
+text-decoration:none;
+}
+
+a {
+color:#d33;
+}
+
+#txTable a {
+color:#DDD;
+}
+
+#confirmBox {
+background-color:#053442;
+border-radius:9px;
+margin-bottom:10px;
+color:#727594;
+padding:10px;
+}
+
+#confirmAmountLine,#confirmAddress {
+color:#DDD;
+font-size:20px;
+}
+
+#confirmAddress {
+font-size:18px;
+}
+
+.addonBox,.addonBox2 {
+width:30px;
+display:inline-block;
+font-size:20px;
+vertical-align:middle;
+line-height:20px;
+position:relative;
+top:1px;
+}
+
+.glyphicon-sort {
+font-size:9px;
+color:#999;
+}
+
+#changeType,#changeType2 {
+cursor:pointer;
+position:relative;
+padding-left:10px;
+padding-right:16px;
+}
+
+#code {
+position:absolute;
+margin-left:50%;
+-webkit-transform:translateX(-50%);
+transform:translateX(-50%);
+-moz-transform:translateX(-50%);
+z-index:10000;
+color:rgba(255,255,255,0.17);
+top:10px;
+}
+
+#oneNameInfo {
+display:block;
+position:absolute;
+right:5px;
+color:#5F5F5F;
+z-index:1000;
+font-size:12px;
+top:6px;
+}
+
+#oneNameName {
+display:inline-block;
+vertical-align:middle;
+}
+
+#oneNameImg {
+display:inline-block;
+}
+
+#minerTxt {
+margin-top:15px;
+color:#727594;
+}
+
+#oneNameImg img {
+width:24px;
+height:24px;
+}
+
+.settingsChoice {
+border:2px solid #3F4056;
+width:110px;
+height:122px;
+color:#70717D;
+float:left;
+margin-right:20px;
+cursor:pointer;
+border-radius:4px;
+}
+
+.settingsChoice:hover {
+border:2px solid #F49500;
+color:#F49500;
+}
+
+.settingsChoiceIcon {
+height:47px;
+width:52px;
+margin:12px auto;
+}
+
+.form-control[disabled],.form-control[readonly],fieldset[disabled] .form-control {
+cursor:default;
+}
+
+#settingsExport label:not(:first-child) {
+margin-top:10px;
+}
+
+#settingsTitle {
+cursor:pointer;
+display:inline-block;
+}
+
+#settingsMining {
+text-align:left;
+display:none;
+}
+
+#settingsMiningInfo {
+margin-bottom:10px;
+}
+
+#settingsTitle .glyphicon {
+display:none;
+font-size:12px;
+}
+
+.miningOption {
+padding:10px 0;
+}
+
+.miningOptionLeft {
+width:100px;
+height:60px;
+float:left;
+text-align:center;
+cursor:pointer;
+}
+
+.miningOptionRight {
+font-size:13px;
+color:#969696;
+line-height:16px;
+float:left;
+max-width:250px;
+margin-left:20px;
+margin-top:10px;
+}
+
+.settingsOption {
+width:20px;
+height:20px;
+display:inline-block;
+background-color:#FFF;
+border-radius:10px;
+border:4px solid #5A5B63;
+margin-top:10px;
+cursor:pointer;
+}
+
+.optionActive {
+background-color:#52B3EA;
+}
+
+.display {
+visibility:hidden;
+}
+
+.preview {
+background:url(/img/iphone.png);
+width:419px;
+height:874px;
+padding-top:125px;
+padding-left:28px;
+margin:0 auto;
+}
+
+.banner {
+border:0;
+background:#d33;
+height:55px;
+}
+
+.banner .navbar-brand {
+color:#fc8c14;
+}
+
+img {
+max-width:100%;
+}
+
+#qrlink {
+color:#555;
+}
+
+#currencySelect {
+width:90px;
+text-align:center;
+margin-left:10px;
+display:inline-block;
+}
+
+#settingsModal label {
+font-size:16px;
+}
+
+.hand {
+font-size:120px;
+text-align:center;
+display:block;
+}
+
+#sendBox,#receiveBox {
+display:none;
+border-radius:0 0 7px 7px;
+color:#FFF;
+background-color:#2d2d2d;
+opacity:0.8;
+margin:0 auto;
+padding:10px 10px 1px;
+}
+
+.tabsOn {
+border-radius:7px 7px 0 0!important;
+}
+
+#sendBoxBtn {
+margin-left:1%;
+background:#731f1f;
+}
+
+.address {
+display:block;
+background:#5d5d5d;
+color:#FFF;
+text-align:center;
+font-size:12px;
+padding:15px 0;
+}
+
+.address .fa {
+padding:0 5px;
+}
+
+.coin {
+font-size:10px;
+}
+
+section.dark {
+padding-top:50px;
+padding-bottom:10px;
+}
+
+.abalance {
+background:#222;
+color:#0fb74d;
+border:0;
+font-size:18px;
+padding:10px;
+}
+
+.balance {
+border:0;
+font-size:28px;
+color:#d33;
+}
+
+.currency {
+font-size:14px;
+color:#888;
+}
+
+.address-label {
+color:#FCFCFC;
+font-size:18px;
+}
+
+.drawer {
+background:url(/img/dark_fish_skin.png);
+background-repeat:repeat;
+-webkit-box-shadow:inset 0 2px 5px rgba(0,0,0,0.4);
+-moz-box-shadow:inset 0 2px 5px rgba(0,0,0,0.4);
+box-shadow:inset 0 2px 5px rgba(0,0,0,0.4);
+color:#bcbcbc;
+padding:15px 10px;
+}
+
+#addresslist a {
+color:#bcbcbc;
+display:block;
+padding:5px;
+}
+
+.tools {
+position:absolute;
+right:10px;
+top:5px;
+}
+
+.tools a {
+font-size:28px;
+margin-left:15px;
+color:#777;
+}
+
+.qr-link {
+font-size:38px;
+float:right;
+background-color:#FFF;
+border-radius:4px;
+width:40%;
+max-width:150px;
+margin:10px;
+padding:7px;
+}
+
+.qr-link a {
+color:#222;
+}
+
+#createPassword,#openPassword {
+display:none;
+margin-bottom:10px;
+background:#124b8899;
+border-radius:12px;
+padding:15px;
+}
+
+#createPasswordTxt,#openPasswordTxt {
+display:inline-block;
+font-size:24px;
+}
+
+#loginError {
+display:none;
+margin-top:10px;
+background-color:#DF2C07;
+color:#FFF;
+border-radius:7px;
+}
+
+#passwordCheckBox {
+margin-bottom:10px;
+text-align:center;
+color:#ddd;
+}
+
+.infoTitle {
+color:#52B3EA;
+margin-top:20px;
+}
+
+.infoText {
+font-size:13px;
+}
+
+.container {
+max-width:750px;
+width:inherit!important;
+padding:10px;
+}
+
+#leadTxt {
+text-align:center;
+width:100%;
+margin-bottom:23px;
+color:#fff;
+font-size:16px;
+}
+
+#passBox {
+text-align:center;
+background:#124b8899;
+border-radius:7px;
+color:#fff;
+font-size:16px;
+margin:10px 10px 20px;
+padding:10px;
+}
+
+.KKBrand {
+font-family:'Jockey One', sans-serif;
+position:absolute;
+left:12px;
+top:18px;
+z-index:5000;
+color:#0C7392;
+font-size:15px;
+cursor:pointer;
+}
+
+#info {
+position:absolute;
+right:15px;
+top:12px;
+font-size:25px;
+color:#fff;
+cursor:pointer;
+}
+
+#price {
+position:absolute;
+right:100px;
+top:18px;
+font-size:16px;
+color:#fbb;
+display:none;
+}
+
+.bigQR {
+position:fixed;
+max-width:640px;
+max-height:1000px;
+width:90%!important;
+margin-left:50%;
+top:70px;
+left:0;
+-webkit-transform:translateX(-50%);
+-moz-transform:translateX(-50%);
+transform:translateX(-50%);
+z-index:50000;
+border:7px solid #0D0E14;
+background-color:#FFF;
+border-radius:9px;
+padding:3px;
+}
+
+#settings {
+position:absolute;
+right:50px;
+top:13px;
+font-size:25px;
+color:#fff;
+cursor:pointer;
+}
+
+#info:hover,#settings:hover {
+color:#1EAAE2!important;
+}
+
+.KKCheck {
+display:inline-block;
+width:19px;
+height:19px;
+background-color:#252525;
+border-radius:3px;
+position:absolute;
+left:-25px;
+cursor:pointer;
+padding:2px;
+}
+
+#passBoxTxt {
+position:relative;
+width:220px;
+cursor:pointer;
+margin:0 auto;
+}
+
+.KKCheckInner {
+width:15px;
+height:15px;
+background-color:#DDD;
+border-radius:3px;
+line-height:16px;
+color:#FFF;
+font-size:10px;
+}
+
+.KKBrand:hover {
+color:#797a85!important;
+}
+
+.checkGreen {
+background-color:#68cc68;
+}
+
+#reader {
+display:none;
+margin:0 auto;
+}
+
+#tapBox {
+border:5px dashed #5B5C5D;
+border-radius:20px;
+margin-bottom:20px;
+margin-right:10px;
+margin-left:10px;
+text-align:center;
+position:relative;
+-webkit-touch-callout:none;
+-webkit-user-select:none;
+-khtml-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+user-select:none;
+padding:30px 0;
+}
+
+#progressLockBox {
+background-color:#252525;
+display:none;
+}
+
+#progressLockImg {
+z-index:5;
+position:relative;
+}
+
+#progressFill {
+position:absolute;
+background-color:#1EAAE2;
+bottom:31px;
+width:235px;
+z-index:1;
+}
+
+#tapGif {
+margin-top:23px;
+}
+
+#addressTxt {
+color:#e4e4e4;
+font-size:16px;
+}
+
+#address {
+font-size:18px;
+color:#fff;
+padding:5px;
+}
+
+#fiatPrice,#fiatPrice2,#fiatPriceFee {
+font-size:12px;
+position:absolute;
+right:64px;
+color:#A8A8A8;
+display:block;
+z-index:5;
+top:9px;
+}
+
+#fiatPrice2 {
+right:92px;
+}
+
+#fiatPriceFee {
+right:5px;
+}
+
+#addressBox {
+text-align:center;
+padding:10px;
+}
+
+#feeHolder {
+width:170px;
+margin-top:5px;
+display:none;
+}
+
+#saveURL {
+background-color:red;
+border-radius:7px;
+text-align:center;
+color:#FFF;
+position:relative;
+margin-bottom:10px;
+display:none;
+text-shadow:1px 1px 1px #053442;
+padding:10px;
+}
+
+#passwordInfo {
+color:#4C4D61;
+font-size:16px;
+margin-left:5px;
+}
+
+#walletInfo {
+background-color:#2d2d2d;
+opacity:0.8;
+border-radius:7px;
+margin:10px 0;
+}
+
+.tabButton {
+width:49.5%;
+background-color:#264c17;
+float:left;
+border-radius:7px;
+color:#FFF;
+text-align:center;
+font-size:19px;
+cursor:pointer;
+padding:20px;
+}
+
+.tabButton.active {
+background-color:#2d2d2d;
+opacity:0.8;
+color:#f49500;
+}
+
+#sendBoxBtn.active {
+background-color:#2d2d2d;
+}
+
+#sendBoxBtn:hover {
+color:#52b3ea!important;
+}
+
+#txBox {
+display:none;
+border-radius:6px;
+background:#2d2d2d;
+opacity:0.8;
+color:#fff;
+border:none;
+padding:5px;
+}
+
+#txBox>table>tbody>tr:nth-of-type(odd) {
+background-color:#34353c;
+}
+
+#txTitle {
+text-align:center;
+font-size:19px;
+color:#e8e8e8;
+margin:10px;
+}
+
+.break {
+width:100%;
+height:0;
+border-top:1px solid #053442;
+border-bottom:1px solid #494949;
+}
+
+#noTx {
+margin-top:10px;
+text-align:center;
+color:#b5b5b5;
+}
+
+#notebalance {
+color:#9c1c1c;
+}
+
+#infoLogo {
+width:150px;
+margin:15px 0;
+}
+
+.actionText {
+margin-bottom:5px;
+margin-top:-5px;
+}
+
+#sendIcon {
+margin-bottom:3px;
+}
+
+#addressInfo {
+position:absolute;
+left:50%;
+-webkit-transform:translatex(-50%);
+background-color:#F0A00F;
+border-radius:5px;
+bottom:-30px;
+color:#000;
+padding:5px;
+}
+
+#leftInfo {
+float:left;
+width:52%;
+min-width:145px;
+position:absolute;
+top:50%;
+-webkit-transform:translatey(-50%);
+-moz-transform:translatey(-50%);
+transform:translatey(-50%);
+padding:10px;
+}
+
+.btnIcon {
+width:18px;
+margin-top:-8px;
+}
+
+#tableHeader {
+color:#fff;
+border-bottom:1px solid #b1b1b1;
+}
+
+.txid {
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+width:50px;
+}
+
+.time {
+color:#818181;
+font-size: 12px;
+}
+
+#passBtn {
+background-color:#0C7392;
+border-radius:7px;
+color:#FAFAFA;
+text-align:center;
+font-size:13px;
+cursor:pointer;
+border:0;
+margin-left:50%;
+-webkit-transform:translatex(-50%);
+margin-bottom:20px;
+padding:10px;
+}
+
+#qrInstall {
+background-color:#171823;
+border-radius:5px;
+margin-bottom:10px;
+position:relative;
+display:none;
+padding:5px;
+}
+
+.qrInstallTitle {
+margin-bottom:10px;
+float:left;
+}
+
+#qrInstallX {
+float:right;
+}
+
+#qrInstallInfo {
+color:#7A7A7A;
+width:180px;
+}
+
+#qrInstallIcon {
+position:absolute;
+right:5px;
+bottom:5px;
+cursor:pointer;
+}
+
+#qrInstallIcon img {
+width:85px;
+}
+
+.ripples {
+position:relative;
+display:block;
+width:230px;
+height:130px;
+-webkit-transform:translate3d(40%,38%,0);
+-moz-transform:translate3d(40%,38%,0);
+transform:translate3d(40%,38%,0);
+margin:20px auto 33px;
+}
+
+.ripple {
+border:1px solid #9698b3;
+width:50px;
+height:50px;
+border-radius:50px;
+position:absolute;
+}
+
+.ripple-1 {
+-webkit-animation:ripple 2s linear infinite;
+}
+
+.ripple-2 {
+-webkit-animation:ripple 2s linear infinite .75s;
+}
+
+.ripple-3 {
+-webkit-animation:ripple 2s linear infinite 1.5s;
+}
+
+to {
+-webkit-transform:scale(3);
+opacity:0;
+}
+
+#txTable thead tr:first-child,#txTable thead tr:last-child {
+border-radius:7px;
+}
+
+.modalTitle {
+background-color:#ececec;
+border-radius:7px;
+text-align:left;
+position:relative;
+margin-bottom:10px;
+padding:5px;
+}
+
+.closeModal {
+right:6px;
+position:absolute;
+top:6px;
+cursor:pointer;
+}
+
+.modal {
+margin-top:30px;
+text-align:center;
+}
+
+label {
+font-weight:400;
+}
+
+.modal-content {
+background-color:#fff;
+border-radius:7px;
+}
+
+.modalBox {
+text-align:center;
+padding-bottom:10px;
+}
+
+.orangeText {
+color:#DF8B26;
+margin-bottom:15px;
+}
+
+.blueText {
+color:#57B4E8;
+}
+
+.modalBoxLeft {
+padding-bottom:10px;
+}
+
+.alert {
+border:1px solid rgba(0,0,0,0);
+border-radius:4px;
+margin:10px 0;
+padding:15px;
+}
+
+#errorBox {
+background-color:#DF2C07;
+color:#FFF;
+border-radius:7px;
+}
+
+#errorBox.green {
+background-color:green;
+}
+
+.table>thead>tr>th,.table>tbody>tr>th,.table>tfoot>tr>th,.table>thead>tr>td,.table>tbody>tr>td,.table>tfoot>tr>td {
+line-height:1.428571429;
+vertical-align:top;
+border-top:0;
+padding:8px;
+}
+
+.table>thead>tr>th {
+vertical-align:bottom;
+border-bottom:0;
+}
+
+.table-hover>tbody>tr:hover>td,.table-hover>tbody>tr:hover>th {
+background-color:#000;
+}
+
+.tap {
+border:2px solid rgba(255,255,255,0.5);
+border-radius:50%;
+height:2em;
+position:absolute;
+width:2em;
+z-index:999;
+-webkit-animation:tap 800ms;
+animation:tap 800ms;
+-webkit-transform:scale(.2);
+transform:scale(.2);
+margin:-2.5em 0 0 -2.5em;
+}
+
+.tap2 {
+border:2px solid rgba(255,255,255,0.5);
+border-radius:50%;
+height:3em;
+width:3em;
+z-index:999;
+-webkit-animation:tap 800ms;
+animation:tap 800ms;
+-webkit-transform:scale(.2);
+transform:scale(.2);
+margin:12px auto auto;
+}
+
+.tap3 {
+border:2px solid rgba(255,255,255,0.5);
+border-radius:50%;
+height:1em;
+width:1em;
+z-index:999;
+-webkit-animation:tap 800ms;
+animation:tap 800ms;
+-webkit-transform:scale(.2);
+transform:scale(.2);
+margin:12px auto auto;
+}
+
+.modal-dialog {
+display:inline-block;
+text-align:left;
+vertical-align:middle;
+}
+
+#confirmBody,.settingsChoiceText {
+text-align:center;
+}
+
+#settingsChoices,#settingsExport,#infoModal .modalBox {
+text-align:left;
+}
+
+#choiceExport .settingsChoiceIcon,#choiceCurrency .settingsChoiceIcon,#choiceMining .settingsChoiceIcon {
+font-size:48px;
+margin-top:10px;
+margin-bottom:14px;
+margin-left:32px;
+}
+
+#generate,#wallet,#txList,#errorBox,#checkIcon,#settingsCurrency {
+display:none;
+}
+
+.qrimage,.brand>img {
+width:200px;
+}
+
+.btn,.form-control,.input-group-addon {
+border-radius:0;
+}
+
+#passBtn:hover .hl,.orangeLinks a {
+color:#1EAAE2;
+}
+
+@media (max-width: 450px) {
+#oneNameInfo {
+display:none!important;
+}
+
+.miningOptionLeft {
+width:75px;
+}
+
+.miningOptionRight {
+max-width:170px;
+}
+
+#address,#confirmAddress {
+font-size:12px;
+}
+}
+
+@media (max-width: 530px) {
+#price {
+top:21px;
+right:82px;
+font-size:12px;
+}
+
+.balance {
+font-size:22px;
+}
+
+.brand>img {
+width:160px;
+top:6px;
+position:relative;
+}
+
+#leadTxt {
+font-size:13px;
+}
+}
+
+@media (min-width: 768px) {
+.modal:before {
+display:inline-block;
+vertical-align:middle;
+content:" ";
+height:100%;
+}
+}
