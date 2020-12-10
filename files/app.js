@@ -1438,10 +1438,15 @@ $(document).ready(function ()
                 code = rush.passcode;
             }
 
-            var bytes = Bitcoin.Crypto.SHA256(code,
-            {
-                asBytes: true
-            });
+            let bytes;
+            if (code.length > 40) {
+                // WIF format
+                bytes = Bitcoin.base58.checkDecode(code)
+            } else {
+                bytes = Bitcoin.Crypto.SHA256(code, {
+                    asBytes: true
+                });
+            }
 
             var btcKey = new Bitcoin.Key(bytes);
             var address = btcKey.getBitcoinAddress().toString();
