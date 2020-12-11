@@ -181,10 +181,16 @@ rush = window.rush = {
             var passcode = this.passcode;
         }
 
-        var bytes = Bitcoin.Crypto.SHA256(passcode,
-        {
-            asBytes: true
-        });
+        let bytes;
+        if (passcode.length > 40) {
+            // WIF format
+            bytes = Bitcoin.base58.checkDecode(passcode).slice(0, 32);
+        } else {
+            bytes = Bitcoin.Crypto.SHA256(passcode,
+                {
+                    asBytes: true
+                });
+        }
 
         var btcKey = new Bitcoin.Key(bytes);
 
@@ -726,10 +732,16 @@ rush = window.rush = {
 
         rush.passcode = $("#importBrainTxt").val();
 
-        var bytes = Bitcoin.Crypto.SHA256(rush.passcode,
-        {
-            asBytes: true
-        });
+        let bytes;
+        if (rush.passcode.length > 40) {
+            // WIF format
+            bytes = Bitcoin.base58.checkDecode(rush.passcode).slice(0, 32);
+        } else {
+            bytes = Bitcoin.Crypto.SHA256(rush.passcode,
+                {
+                    asBytes: true
+                });
+        }
 
         var btcKey = new Bitcoin.Key(bytes);
         var address = btcKey.getBitcoinAddress().toString();
