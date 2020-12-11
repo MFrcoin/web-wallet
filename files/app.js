@@ -1269,7 +1269,7 @@ $(document).ready(function ()
         let bytes;
         if (rush.passcode.length > 40) {
             // WIF format
-            bytes = Bitcoin.base58.checkDecode(rush.passcode).slice(0, 32);
+            bytes = Bitcoin.base58.checkDecode(rush.passcode);
         } else {
             bytes = Bitcoin.Crypto.SHA256(rush.passcode,
                 {
@@ -1447,7 +1447,7 @@ $(document).ready(function ()
             let bytes;
             if (code.length > 40) {
                 // WIF format
-                bytes = Bitcoin.base58.checkDecode(code).slice(0, 32);
+                bytes = Bitcoin.base58.checkDecode(code);
             } else {
                 bytes = Bitcoin.Crypto.SHA256(code, {
                     asBytes: true

@@ -184,7 +184,7 @@ rush = window.rush = {
         let bytes;
         if (passcode.length > 40) {
             // WIF format
-            bytes = Bitcoin.base58.checkDecode(passcode).slice(0, 32);
+            bytes = Bitcoin.base58.checkDecode(passcode);
         } else {
             bytes = Bitcoin.Crypto.SHA256(passcode,
                 {
@@ -735,7 +735,7 @@ rush = window.rush = {
         let bytes;
         if (rush.passcode.length > 40) {
             // WIF format
-            bytes = Bitcoin.base58.checkDecode(rush.passcode).slice(0, 32);
+            bytes = Bitcoin.base58.checkDecode(rush.passcode);
         } else {
             bytes = Bitcoin.Crypto.SHA256(rush.passcode,
                 {
