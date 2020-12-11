@@ -289,7 +289,7 @@ rush = window.rush = {
             		satin=0;
             		for (ins=0;ins<txs.vin.length;ins++ )
             		{
-            			if (thisaddr != txs.vin[ins].addr) {
+            			if (thisaddr !== txs.vin[ins].addr) {
             				satin = satin+parseFloat(txs.vin[ins].value);
             			}
             		}
@@ -297,7 +297,8 @@ rush = window.rush = {
             		satout=0;
             		for (outs=0;outs<txs.vout.length;outs++ )
             		{
-            			if (thisaddr != txs.vout[outs].scriptPubKey.addresses[0]) {
+                        let scriptPubKey = txs.vout[outs].scriptPubKey;
+            			if (scriptPubKey.type !== "nonstandard" && thisaddr !== scriptPubKey.addresses[0]) {
             				satout = satout+parseFloat(txs.vout[outs].value);
             			}
             		}
