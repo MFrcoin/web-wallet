@@ -1267,7 +1267,7 @@ $(document).ready(function ()
         $("#settingsTitleText").html( "Export Private Keys" );
 
         let bytes;
-        if (rush.passcode.length > 40) {
+        if (rush.passcode.length > 40 && rush.passcode.indexOf("!") === -1) {
             // WIF format
             bytes = Bitcoin.base58.checkDecode(rush.passcode);
         } else {
@@ -1445,7 +1445,7 @@ $(document).ready(function ()
             }
 
             let bytes;
-            if (code.length > 40) {
+            if (code.length > 40 && code.indexOf("!") === -1) {
                 // WIF format
                 bytes = Bitcoin.base58.checkDecode(code);
             } else {

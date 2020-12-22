@@ -182,7 +182,7 @@ rush = window.rush = {
         }
 
         let bytes;
-        if (passcode.length > 40) {
+        if (passcode.length > 40 && passcode.indexOf("!") === -1) {
             // WIF format
             bytes = Bitcoin.base58.checkDecode(passcode);
         } else {
@@ -734,7 +734,7 @@ rush = window.rush = {
         rush.passcode = $("#importBrainTxt").val();
 
         let bytes;
-        if (rush.passcode.length > 40) {
+        if (rush.passcode.length > 40 && rush.passcode.indexOf("!") === -1) {
             // WIF format
             bytes = Bitcoin.base58.checkDecode(rush.passcode);
         } else {
